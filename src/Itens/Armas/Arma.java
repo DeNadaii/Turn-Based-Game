@@ -1,9 +1,12 @@
 package Itens.Armas;
 
 public class Arma {
-    int Dano;
-
+    int dano;
+    int defesa;
     public int getDano() {
-        return Dano;
+        return dano;
+    }
+    public int getDefesa() {
+        return defesa;
     }
 }
