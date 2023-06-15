@@ -1,4 +1,6 @@
 import Classes.Guerreiro;
+import Itens.Armas.Escudo;
+import Itens.Armas.Espada;
 import Itens.Itens.PocaoCura;
 import Personagem.Personagem;
 import Raca.Humano;
@@ -11,10 +13,12 @@ public class Main {
         System.out.println(g1.getForca());
         System.out.println(h1.getForca());
 
-        Personagem p1 = new Personagem("bob",new Guerreiro(),new Humano());
-        //p1.setArma(new Espada());
+        Personagem p1 = new Personagem("bob o bobo",new Guerreiro(),new Humano());
+        p1.setArma(new Espada());
+        p1.setArma(new Escudo());
         System.out.println(p1.getForca());
         System.out.println(p1.atack());
+
         System.out.println("vida antes" + p1.getVida());
         PocaoCura pocao = new PocaoCura(p1);
         pocao.usarCura();

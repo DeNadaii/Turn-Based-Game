@@ -4,6 +4,8 @@ import Classes.Classe;
 import Itens.Armas.Arma;
 import Raca.Raca;
 
+import java.util.List;
+
 public class Personagem{
     String nome;
     Classe classe;
@@ -12,6 +14,7 @@ public class Personagem{
     int forca;
     int inteligencia;
     int vida;
+    int defesa;
     public Personagem(String nome, Classe classe, Raca raca){
         this.nome = nome;
         this.classe = classe;
@@ -22,6 +25,7 @@ public class Personagem{
         this.forca = classe.getForca() + raca.getForca();
         this.inteligencia = classe.getInteligencia() + raca.getInteligencia();
         this.vida = classe.getVida() + raca.getVida();
+        this.defesa = classe.getDefesa() + raca.getDefesa();
     }
     public int atack(){
         int atack;
